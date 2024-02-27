@@ -1,0 +1,359 @@
+body, body * {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  line-height: 26px;
+}
+
+p, ul, ol, h4 {
+  margin-top: revert;
+}
+
+h2, .navbar-brand {
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 2.5rem;
+  line-height: 52px;
+}
+h2 {
+  font-size: 1.875rem;
+  line-height: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-weight: lighter;
+}
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 26px;
+  margin-bottom: revert;
+}
+
+section {
+  overflow: hidden;
+}
+
+section:not(.main) {
+  padding: 2.5rem 0;
+}
+
+section:nth-child(odd) {
+  background-color: #f2fbff;
+}
+
+h2 i {
+  font-size: 2rem;
+  color:rgb(204,221,238);
+}
+
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1230px;
+  }
+}
+
+/* navbar */
+.navbar-nav {
+  margin-top: 0;
+}
+.navbar-brand {
+  font-size: 18px;
+}
+.navbar {
+  padding: 1rem;
+  background-color: #fff;
+}
+.navbar a {
+  color: #0b33a5;
+}
+.nav-item {
+  padding-bottom: 0;
+}
+@media (min-width: 1200px) {
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+/* navbar end */
+
+/* Navbar mobile */
+.navbar-dark .navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar-toggler .icon-bar {
+  background-color: #0b33a5;
+  border-radius: 2px;
+  display: block;
+  height: 3px;
+  width: 25px;
+}
+.navbar-toggler .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+.icon-bar,
+.navbar-toggler .icon-bar,
+.navbar-toggler.toggle-clicked .icon-bar {
+  transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+}
+
+.navbar-toggler.toggle-clicked .icon-bar:nth-child(1) {
+  transform: rotate(-43deg);
+  margin-left: -27px !important;
+  min-width: 31px;
+}
+
+.navbar-toggler.toggle-clicked .icon-bar:nth-child(2) {
+  transform: rotate(43deg);
+  margin-left: -27px !important;
+  margin-top: -3px !important;
+  min-width: 31px;
+}
+
+.navbar-toggler.toggle-clicked .icon-bar:nth-child(3) {
+  transform: rotate(37deg);
+  margin-left: -1px !important;
+  width: 21px !important;
+  opacity: 0;
+  margin-top: -2px;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    height: 100vh;
+    margin-top: 2em;
+    margin-left: 60px !important; 
+  }
+
+  .navbar {
+    padding-top: 20px; 
+  }
+  .navbar-shrink {
+    padding-top: 0.5rem; 
+  }
+  .navbar-brand,
+  .nav-link {
+    font-size: 24px; 
+  }
+  .nav-link::before {
+    display: none; 
+  }
+  .nav-link.active {
+    font-weight: bold; 
+  }
+}
+/* Navbar mobile end*/
+
+/* main*/
+.main {
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../IMG/i.png);
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  margin-top: 74px;
+}
+
+
+
+.main .row {
+  min-height: 600px;
+}
+
+.main .main-left {
+  position: relative;
+  background-color:rgba(186,3,46,0.7);
+}
+
+.main .main-right {
+  position: relative;
+  background-color:rgba(41,77,180,0.7);
+}
+
+.main .main-left h1 {
+  max-width: 400px;
+}
+
+.main .main-right > span {
+  font-size: 24px;
+  display: block;
+  line-height: 34px;
+  color: white;
+  font-family: 'Roboto Light', sans-serif;
+  max-width: 440px;
+}
+
+@media (min-width: 992px) {
+  .main h1 {
+    text-align: right;
+  }
+  .main .main-left {
+    padding-right: 145px;
+    padding-top: 250px;
+  }
+  .main .main-right {
+    padding-left: 135px;
+    padding-top: 250px;
+  }
+}
+
+@media (max-width: 991px) {
+  .main .main-right > .slider {
+    max-width: none;
+  }
+  .main .main-right {
+    padding-top: 2rem;
+  }
+  .img-fluid {
+    position: static!important;
+    height: auto!important;
+  }
+}
+/* main end*/
+
+.red-border {
+  border: 1px solid red;
+  border-radius: 5px;
+  padding-top: 40px;
+}
+
+ul {
+  list-style-position: inside;
+  padding: 0px;
+}
+
+ul > li {
+  padding-bottom: 1rem;
+}
+
+ul > li > span {
+  -webkit-margin-start: -10px;
+}
+
+ul.redPoint > li::marker {
+  color: red;
+}
+ul.bluePoint > li::marker {
+  color: #0b33a5;
+}
+
+/* slick-slider */
+.slick-slider:not(.slick-dotted) {
+  margin: 0 2em;
+}
+.slick-slider:not(.slick-dotted) .slick-slide {
+  padding: 1em;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+.slick-slider:not(.slick-dotted) > p {
+  text-align: justify;
+  text-overflow: ellipsis;
+  text-indent: 1em;
+}
+.slick-slider:not(.slick-dotted) .slick-prev,
+.slick-slider:not(.slick-dotted) .slick-next {
+  display: inline-block!important;
+  top: 35%;
+}
+.slick-slider:not(.slick-dotted) .slick-prev:before,
+.slick-slider:not(.slick-dotted) .slick-next:before {
+  color: red;
+}
+.fancybox-slide > * {
+  max-width: 800px;
+  border-radius: 5px;
+  border: 1px solid red;
+  height: auto!important;
+}
+.fancybox-slide p { 
+  text-indent: 1em;
+}
+/* slick-slider end*/
+
+.review > .header {
+  font-style: italic;
+}
+
+
+
+footer {
+  background-color: rgb(36,40,117);
+  padding: 40px 0px;
+  color: white;
+}
+
+footer .footerPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+footer .footerPart > .footerTitle {
+  font-size: 14px;
+  line-height: 24px;
+  color: #ccddee;
+}
+
+footer > *+*:not(:first-child) {
+  margin-left: 120px;
+}
+
+/*cost items*/
+.cost-item {
+  border: 1px solid #f2fbff;
+  border-radius: 5px;
+  padding: 1em;
+  background: #fff;
+  height: 100%;
+}
+
+.cost-item h2 {
+  text-align: center;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.cost-item h4 {
+  text-align: center;
+}
+
+.cost-item img {
+  height: 15px;
+  margin-right: 0.5em;
+}
+
+.cost-item ul li::before {
+  content: '';
+  width: 1em;
+  height: 1em;
+  background: url(../IMG/tick.svg);
+  background-repeat: no-repeat;
+  margin-right: 0.5em;
+  position: absolute;
+  left: 0;
+}
+
+.cost-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.cost-item li { 
+  padding-left: 1.5em;
+}
+
+@media (max-width: 991px) {
+  .cost-item {
+    margin: 1rem 0;
+  }
+}
+/*cost items end*/

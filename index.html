@@ -1,248 +1,253 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/normospher_01.css" />
-    <link rel="stylesheet" href="styles/normospher_01-codes.css" />
-    <link rel="stylesheet" href="styles/normospher_01-embedded.css" />
-    <link rel="stylesheet" href="styles/normospher_01-ie7.css" />
-    <link rel="stylesheet" href="styles/normospher_01-ie7-codes.css" />
-    <link rel="stylesheet" href="styles/animation.css" />
-    <link rel="stylesheet" type="text/css" href="js/slick-1.6.0/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="js/slick-1.6.0/slick/slick-theme.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="js/FancyBox/jquery.fancybox.min.css" />
-    <title>СДЭГ</title>
-    <script>
-        var aobjs = [
-            {
-                question:'А как мы можем быть уверены, что голосует именно депутат?',
-                answer:'Авторизация в приложении СДЭГ проходит по персональному логину и паролю. Учетными записями депутатов управляет администратор системы. Дополнительно можно настроить подтверждение по смс. Кроме того, по окончании заседания участники могут распечатать сводную информацию о своих результатах голосования, заверить их и передать в аппарат.'
-            },
-            {
-                question:'Смогут ли депутаты сами сориентироваться в интерфейсе и принципе работы приложения или потребуется обучение?',
-                answer:'Интерфейс приложения максимально упрощен. Дополнительного обучения не требуется. Подробные инструкции мы предоставим. Кроме того, мы будем сопровождать первое заседание (или тестовое заседание по вашему выбору)'
-            },
-            {
-                question:'А как мы поймем, что есть кворум, если заседание проводится удаленно?',
-                answer:'В ходе проведения заседания в СДЭГ отображается список депутатов, которые находятся в системе в данный момент, и информация об их количестве от общего числа депутатов. Если кворума пропадает, на экраны участников выводится уведомление. <br> Сейчас кворум фиксируется при наличии онлайн двух третей от общего числа депутатов. При необходимости можно настроить другие параметры определения кворума.'
-            },
-            {
-                question:'Можно ли изменять условия принятия решения (варианты подсчета результатов голосования)?',
-                answer:'Да, можно. Для каждого голосования оператор определяет вариант принятия решения из представленных в СДЭГ. Доступны формулы подсчета: большинство (50%+1) или 2/3 голосов от общего числа депутатов или от количества присутствующих. При необходимости можно настроить другие формулы подсчета голосов.'
-            },
-        ];
-    </script>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="js/slick-1.6.0/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="js/slick-1.6.0/slick/slick-theme.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="js/FancyBox/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css" />
+  
+  <link rel="stylesheet" href="styles/normospher_01.css" />
+  <link rel="stylesheet" href="styles/normospher_01-codes.css" />
+  <link rel="stylesheet" href="styles/normospher_01-embedded.css" />
+  <link rel="stylesheet" href="styles/normospher_01-ie7.css" />
+  <link rel="stylesheet" href="styles/normospher_01-ie7-codes.css" />
+  <link rel="stylesheet" href="styles/animation.css" />
+  <!-- <link rel="stylesheet" href="styles/style.css" /> -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>СДЭГ</title>
 </head>
 <body>
-<nav class="fixedMenu">
-    <h1>СДЭГ</h1>
-    <div class="hrefs">
-        <a href="" atrpos="sys">О системе</a>
-        <a href="" atrpos="principies">Характеристики</a>
-        <a href="" atrpos="cost">Стоимость</a>
-        <a href="" atrpos="advantage">Преимущества</a>
-        <a href="" atrpos="answers">Вопрос-ответ</a>
-        <a href="" atrpos="contacts">Контакты</a>
+<header id="header">
+  <nav class="navbar navbar-expand-md fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">СДЭГ</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#sys">О системе</a></li>
+          <li class="nav-item"><a class="nav-link" href="#principies">Характеристки</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cost">Стоимость</a></li>
+          <li class="nav-item"><a class="nav-link" href="#advantage">Преимущества</a></li>
+          <li class="nav-item"><a class="nav-link" href="#answers">Вопрос-ответ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+        </ul>
+      </div>
     </div>
-</nav>
-
-<header>
-    <div class="headerLeft">
-        <span class="headerText">Система дистанционного электронного голосования</span>
-    </div>
-    <div class="headerRight">
-        <span>Позволяет организовывать удаленные заседания законодательных органов власти</span>
-    </div>
+  </nav>
 </header>
 
-<article id="sys">
-    <div class="text-center">
-        <h1>О системе</h1>
-        <span>
-            Система дистанционного электронного голосования (СДЭГ) позволяет организовать дистанционное голосование депутатов по вопросам повестки в режиме онлайн. Депутат, находясь вне зала заседаний, имеет доступ к голосованию аналогично системе зала заседаний. Депутат видит рассматриваемые вопросы и может голосовать по ним.
-            <br>Параллельно должна быть развернута ВКС, по ней проходят обсуждения.
-        </span>
+<section class="main container-fluid">
+  <div class="row">
+    <div class="main-left col-lg-5 d-flex flex-column align-items-lg-end">
+      <h1>Система дистанционного электронного голосования</h1>
     </div>
-</article>
-<article>
-    <div>
-        <h1 class="text-center">Как проходит дистанционное заседание</h1>
-        <div class="centered">
-            <img style="width: 30%;" src="IMG/monitor.png">
-            <ol style="width: 70%;">
-                <li>Администратор заносит в систему информацию о составе участников, вносит повестку</li>
-                <li>Депутаты через браузер заходят на страницу СДЭГ и авторизуются с помощью логина и пароля (при необходимости можно настроить подтверждение по смс)</li>
-                <li>По ВКС председатель объявляет, какой вопрос находится на рассмотрении. Оператор отмечает в списке вопросов повестки заседания текущий рассматриваемый. Депутат видит этот вопрос на экране приложения СДЭГ</li>
-                <li>При объявлении голосования, оператор запускает голосование по текущему вопросу. Депутаты видят на экране варианты: «за», «против», «воздержался» и таймер обратного отсчета </li>
-                <li>После завершения времени голосования вычисляется итог: принято/ не принято решение. На экранах участников выводится информация о количественных итогах.</li>
-                <li>После завершения заседания оператор может выгрузить результаты дистанционного голосования депутатов по вопросам заседания.</li>
-            </ol>
-        </div>
+    <div class="main-right col-lg-7">
+      <span>Позволяет организовывать удаленные заседания законодательных органов власти</span>
     </div>
-</article>
-<article id="effects">
-    <div>
-        <h1 class="text-center">эффекты внедрения</h1>
+  </div>
+</section>
+<section id="sys">
+  <div class="container text-center">
+    <h2>О системе</h2>
+    <span>Система дистанционного электронного голосования (СДЭГ) позволяет организовать дистанционное голосование депутатов по вопросам повестки в режиме онлайн. Депутат, находясь вне зала заседаний, имеет доступ к голосованию аналогично системе зала заседаний. Депутат видит рассматриваемые вопросы и может голосовать по ним.
+      <br>Параллельно должна быть развернута ВКС, по ней проходят обсуждения.
+    </span>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <h2 class="text-center">Как проходит дистанционное заседание</h2>
+    <div class="row">
+      <div class="col-lg-4"><img class="img-fluid" src="assets/IMG/monitor.png"></div>
+      <div class="col-lg-8">
+        <ol>
+          <li>Администратор заносит в систему информацию о составе участников, вносит повестку</li>
+          <li>Депутаты через браузер заходят на страницу СДЭГ и авторизуются с помощью логина и пароля (при необходимости можно настроить подтверждение по смс)</li>
+          <li>По ВКС председатель объявляет, какой вопрос находится на рассмотрении. Оператор отмечает в списке вопросов повестки заседания текущий рассматриваемый. Депутат видит этот вопрос на экране приложения СДЭГ</li>
+          <li>При объявлении голосования, оператор запускает голосование по текущему вопросу. Депутаты видят на экране варианты: «за», «против», «воздержался» и таймер обратного отсчета </li>
+          <li>После завершения времени голосования вычисляется итог: принято/ не принято решение. На экранах участников выводится информация о количественных итогах.</li>
+          <li>После завершения заседания оператор может выгрузить результаты дистанционного голосования депутатов по вопросам заседания.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="effects">
+  <div class="container">
+    <h2 class="text-center">эффекты внедрения</h2>
+    <ul class="redPoint">
+      <li><span>возможность проводить полноценные заседания в период карантина и сложной эпидемиологической обстановки</span></li>
+      <li><span>возможность оперативно голосовать по вопросам федеральной повестки в промежутке между плановыми заседаниями</span></li>
+    </ul>
+  </div>
+  <!-- <div class="slider">
+      <a class="fancybox" rel="group" href="IMG/screens/create.png"><img src="IMG/screens/create.png" alt="" /></a>
+      <a class="fancybox" rel="group" href="IMG/screens/list.png"><img src="IMG/screens/list.png" alt="" /></a>
+      <a class="fancybox" rel="group" href="IMG/screens/form.png"><img src="IMG/screens/form.png" alt="" /></a>
+      <a class="fancybox" rel="group" href="IMG/screens/current.png"><img src="IMG/screens/current.png" alt="" /></a>
+      <a class="fancybox" rel="group" href="IMG/screens/voting.png"><img src="IMG/screens/voting.png" alt="" /></a>
+      <a class="fancybox" rel="group" href="IMG/screens/results.png"><img src="IMG/screens/results.png" alt="" /></a>
+  </div> -->
+</section>
+<section id="principies">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2><i class="icon-star-empty" style="font-size: 32px;color:rgb(238,204,204);" ></i>Характеристки</h2>
+      </div>
+      <div class="col-lg-6">
         <ul class="redPoint">
-            <li><span>возможность проводить полноценные заседания в период карантина и сложной эпидемиологической обстановки</span></li>
-            <li><span>возможность оперативно голосовать по вопросам федеральной повестки в промежутке между плановыми заседаниями</span></li>
+          <li>СДЭГ реализована в виде web-приложения. Работает в браузерах на ПК мобильных устройствах</li>
         </ul>
+      </div>
     </div>
-    <!-- <div class="slider">
-        <a class="fancybox" rel="group" href="IMG/screens/create.png"><img src="IMG/screens/create.png" alt="" /></a>
-        <a class="fancybox" rel="group" href="IMG/screens/list.png"><img src="IMG/screens/list.png" alt="" /></a>
-        <a class="fancybox" rel="group" href="IMG/screens/form.png"><img src="IMG/screens/form.png" alt="" /></a>
-        <a class="fancybox" rel="group" href="IMG/screens/current.png"><img src="IMG/screens/current.png" alt="" /></a>
-        <a class="fancybox" rel="group" href="IMG/screens/voting.png"><img src="IMG/screens/voting.png" alt="" /></a>
-        <a class="fancybox" rel="group" href="IMG/screens/results.png"><img src="IMG/screens/results.png" alt="" /></a>
-    </div> -->
-</article>
-<article id="principies">
-    <div>
-        <div class="between">
-            <div style="max-width:30%;">
-                <h1><i class="icon-star-empty" style="font-size: 32px;color:rgb(238,204,204);" ></i>Характеристки</h1>
-            </div>
-            <div style="max-width:50%;">
-                <ul class="redPoint">
-                    <li>
-                        <span>СДЭГ реализована в виде web-приложения. Работает в браузерах на ПК мобильных устройствах</span>
-                    </li>
-                </ul>
-            </div>
+    <div class="red-border" style="padding:30px;margin-top: 30px;">
+      <h2 class="text-center">требования к программному обеспечению</h2>
+      <div class="row">
+        <div class="col-lg-7">
+          <span><b>Сервер базы данных:</b> 2-ядерный процессор, объем оперативной памяти 8-16 Гб</span>
+          <ul class="bluePoint">
+            <li><b>СУБД:</b> MS SQL Server 2008 R2 (и выше) или Postgre SQL 9.6 (и выше)</li>
+          </ul>
+          <span><b>Серверная ОС:</b> 2-ядерный процессор, объем оперативной памяти 4-8 Гб</span>
+          <ul class="bluePoint">
+            <li>Windows 2012R2 Server и выше,  CentOS 7 и выше, Debian 9 и выше, Ubuntu версий 19.10, 18.04, 16.04</li>
+          </ul>
+          <span><b>Клиентские рабочие места:</b> наличие любого из перечисленных браузеров</span>
+          <ul class="bluePoint">
+            <li>Яндекс.Браузер версии 19 и выше</li>
+            <li>Google Chrome версии 70 и выше</li>
+            <li>Mozilla Firefox версии 70 и выше</li>
+          </ul>
+          <h4>Наличие видео-конференц-связи (ВКС)</h4>
         </div>
-        <div class="red-border" style="padding:30px;margin-top: 30px;">
-            <h1 class="text-center">требования к программному обеспечению</h1>
-            <div class="centered">
-                <div style="width:60%;">
-                    <span><b>Сервер базы данных:</b> 2-ядерный процессор, объем оперативной памяти 8-16 Гб</span>
-                    <ul class="bluePoint">
-                        <li><span><b>СУБД:</b> MS SQL Server 2008 R2 (и выше) или Postgre SQL 9.6 (и выше)</span></li>
-                    </ul>
-                    <span><b>Серверная ОС:</b> 2-ядерный процессор, объем оперативной памяти 4-8 Гб</span>
-                    <ul class="bluePoint">
-                        <li><span>Windows 2012R2 Server и выше,  CentOS 7 и выше, Debian 9 и выше, Ubuntu версий 19.10, 18.04, 16.04</span></li>
-                    </ul>
-                    <span><b>Клиентские рабочие места:</b> наличие любого из перечисленных браузеров</span>
-                    <ul class="bluePoint">
-                        <li><span>Яндекс.Браузер версии 19 и выше</span></li>
-                        <li><span>Google Chrome версии 70 и выше</span></li>
-                        <li><span>Mozilla Firefox версии 70 и выше</span></li>
-                    </ul>
-                    <h3>Наличие видео-конференц-связи (ВКС)</h3>
-                </div>
-                <div style="text-align: center;">
-                    <img src="IMG/comp.png"/>
-                </div>
-            </div>
+        <div class="col-lg-5">
+          <img src="assets/IMG/comp.png"/>
         </div>
+      </div>
     </div>
-</article>
+  </div>
+</section>
 
-<article id="cost">
-    <div>
-        <h1 class="text-center">стоимость</h1>
-        <div class="centered">
-            <div class="cost-item">
-                <h2>Вариант 1</h2> 
-                <h1>300 <samll>тысяч рублей</samll></h1>
-                <ul>
-                    <li>бессрочная серверная лицензия</li>
-                    <li>любое количество депутатов</li>
-                    <li>неограниченное количество заседаний</li>
-                </ul>
-            </div>
-            <div class="cost-item">
-                <h2>Вариант 2</h2>
-                <h1>7 <samll>тысяч рублей</samll></h1>
-                <ul>
-                    <li>одно заседание</li>
-                    <li>любое количество депутатов</li>
-                </ul>
-            </div>
-
-            <div class="cost-item">
-                <h2>Вариант 3</h2>
-                <h1>50 <samll>тысяч рублей</samll> </h1>
-                <ul>
-                    <li>10 заседаний</li>
-                    <li>любое количество депутатов</li>
-                </ul>
-            </div>
-            <div class="cost-item">
-                <h2>Вариант 4</h2>
-                <h1>225 <samll>тысяч рублей</samll> </h1>
-                <ul>
-                    <li>50 заседаний</li>
-                    <li>любое количество депутатов</li>
-                </ul>
-            </div>
+<section id="cost">
+  <div class="container">
+    <h2 class="text-center">стоимость</h2>
+    <div class="row">
+      <div class="col-md-6 col-lg-3 mt-3">
+        <div class="cost-item">
+          <h4>Вариант 1</h4> 
+          <h2>300 <samll>тысяч рублей</samll></h2>
+          <ul>
+            <li>бессрочная серверная лицензия</li>
+            <li>любое количество депутатов</li>
+            <li>неограниченное количество заседаний</li>
+          </ul>
         </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mt-3">
+        <div class="cost-item">
+          <h4>Вариант 2</h4>
+          <h2>7 <samll>тысяч рублей</samll></h2>
+          <ul>
+            <li>одно заседание</li>
+            <li>любое количество депутатов</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mt-3">
+        <div class="cost-item">
+          <h4>Вариант 3</h4>
+          <h2>50 <samll>тысяч рублей</samll> </h2>
+          <ul>
+            <li>10 заседаний</li>
+            <li>любое количество депутатов</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mt-3">
+        <div class="cost-item">
+          <h4>Вариант 4</h4>
+          <h2>225 <samll>тысяч рублей</samll> </h2>
+          <ul>
+            <li>50 заседаний</li>
+            <li>любое количество депутатов</li>
+          </ul>
+        </div>
+      </div>
     </div>
-</article>
-<article id="advantage">
-    <div>
-        <h1 class="text-center">
-            <i class="icon-thumbs-up" style="font-size: 32px;color:rgb(238,204,204);" ></i>
-            Преимущества
-        </h1>
-        <ul class="redPoint">
-            <li><span>срок поставки - 3 рабочих дней с момента заключения контракта, первое заседание вы сможете провести уже через неделю</span></li>
-            <li><span>минимальные системные требования</span></li>
-            <li><span>возможность сервисной модели: оплаты только по количеству проведенных заседаний</span></li>
-            <li><span>гибкие настройки параметров процедуры голосования</span></li>
-        </ul>
-    </div>
-</article>
+  </div>
+</section>
 
-<article id="answers">
+
+<section id="advantage">
+  <div class="container">
+    <h2 class="text-center"><i class="icon-thumbs-up" style="color:rgb(238,204,204);"></i>Преимущества</h2>
+    <ul class="redPoint">
+      <li>срок поставки - 3 рабочих дней с момента заключения контракта, первое заседание вы сможете провести уже через неделю</li>
+      <li>минимальные системные требования</li>
+      <li>возможность сервисной модели: оплаты только по количеству проведенных заседаний</li>
+      <li>гибкие настройки параметров процедуры голосования</li>
+    </ul>
+  </div>
+</section>
+
+<section id="answers">
+  <div class="container">
     <div class="red-border">
-        <h1 class="text-center"><i class="icon-lightbulb" style="font-size: 32px;color:rgb(238,204,204);" ></i>Вопрос-Ответ</h1>
-        <div class="answers" id="answersItems">
+      <h1 class="text-center"><i class="icon-lightbulb" style="font-size: 32px;color:rgb(238,204,204);" ></i>Вопрос-Ответ</h1>
+      <div class="answers" id="answersItems">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="answers">
+  <div class="container">
+    <div class="row justify-content-between">
+        <div class="col-lg-4">
+            <h2>Возможно, вас также заинтересует</h2>
+        </div>
+        <div class="col-lg-6">
+            <b>Система поддержки законотворческой и нормотворческой деятельности «Нормосфера»:</b>
+            <ul class="bluePoint">
+              <li>автоматизирует процессы законотворчества и нормотворчества</li>
+              <li>обеспечивает безбумажный процесс подготовки и проведения заседаний</li>
+              <li>дает возможность удаленно работать с паспортами законов, повестками заседаний и сопроводительными документами</li>
+            </ul>
+            <a target="_blank" href="https://normosphera.ru/">Узнать подробнее</a>
         </div>
     </div>
-</article>
-<article id="answers">
-    <div>
-        <div class="between">
-            <div style="max-width:30%;">
-                <h1>Возможно, вас также заинтересует</h1>
-            </div>
-            <div style="max-width:50%;">
-                <b>Система поддержки законотворческой и нормотворческой деятельности «Нормосфера»:</b>
-                <ul class="bluePoint">
-                    <li><span>автоматизирует процессы законотворчества и нормотворчества</span></li>
-                    <li><span>обеспечивает безбумажный процесс подготовки и проведения заседаний</span></li>
-                    <li><span>дает возможность удаленно работать с паспортами законов, повестками заседаний и сопроводительными документами</span></li>
-                </ul>
-                <a target="_blank" href="http://xn--80ajudfbmdh4a.xn--p1ai/ ">Узнать подробнее</a>
-            </div>
-        </div>
-
-    </div>
-</article>
+  </div>
+</section>
 <footer id="contacts">
-    <div class="footerPart">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 footerPart">
         <span class="footerTitle">ООО «Новая платформа»</span>
         <span></span>
-    </div>
-    <div class="footerPart">
+      </div>
+      <div class="col-lg-4 footerPart">
         <span class="footerTitle">телефон</span>
-        <span>+7 (342) 238-53-00 (1084)</span>
-    </div>
-    <div class="footerPart">
+        <span><a href="tel:+73422030486" style="color:white;">+7 (342) 203-04-86</a></span>
+      </div>
+      <div class="col-lg-4 footerPart">
         <span class="footerTitle">адрес</span>
-        <span>614007, г.Пермь, ул. Тимирязева, 24а</span>
+        <span>Россия, г. Пермь, ул. Н.Островского, 99, оф. 412</span>
+      </div>
     </div>
+  </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/NiceScroll/jquery.nicescroll.js"></script>
 <script type="text/javascript" src="js/FancyBox/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="js/slick-1.6.0/slick/slick.min.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
+<script src="assets/dist/js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
 </body>
 </html>
